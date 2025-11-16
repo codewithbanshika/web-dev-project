@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Healify Dashboard</title>
+
+<style>
+    body{
+        margin:0;
+        font-family: Arial;
+        background:#e9f5ff; /* Light blue background */
+    }
+
+    header{
+        background:#4ba3ff; /* Blue */
+        padding:20px;
+        text-align:center;
+        font-size:28px;
+        font-weight:bold;
+        color:white;
+        letter-spacing:1px;
+    }
+
+    .container{
+        width:90%;
+        margin:auto;
+        margin-top:20px;
+    }
+
+    /* Dashboard Box */
+    details{
+        background:white;
+        padding:20px;
+        border-radius:14px;
+        border:2px solid #a6d4ff;
+        margin-bottom:18px;
+        transition:0.3s;
+    }
+
+    details:hover{
+        transform:scale(1.01);
+        background:#f2f8ff;
+    }
+
+    summary{
+        font-size:22px;
+        color:#2277ff;
+        cursor:pointer;
+        outline:none;
+    }
+
+    .section{
+        background:#f2f8ff;
+        padding:15px;
+        border-radius:10px;
+        margin-top:10px;
+        border-left:4px solid #4ba3ff;
+    }
+
+    textarea{
+        width:100%;
+        height:90px;
+        margin-top:10px;
+        border-radius:10px;
+        border:2px solid #a6d4ff;
+        padding:10px;
+        background:white;
+    }
+
+    select{
+        padding:10px;
+        border-radius:10px;
+        border:2px solid #a6d4ff;
+        background:white;
+    }
+
+    button{
+        background:#4ba3ff;
+        color:white;
+        border:none;
+        padding:10px 15px;
+        border-radius:10px;
+        margin-top:10px;
+        font-size:15px;
+    }
+
+    ul li{
+        margin-bottom:8px;
+    }
+
+</style>
+
+</head>
+<body>
+
+<header>🏠 Healify Dashboard</header>
+
+<div class="container">
+
+    <!-- Mood Tracker -->
+    <details>
+        <summary>😊 Mood Tracker</summary>
+        <div class="section">
+            <p>💙 Choose your mood:</p>
+            <select>
+                <option>Happy 😊</option>
+                <option>Sad 😔</option>
+                <option>Angry 😡</option>
+                <option>Stressed 😥</option>
+                <option>Confused 😕</option>
+            </select>
+
+            <p style="margin-top:10px;">💡 Tracking mood helps you understand yourself better.</p>
+        </div>
+    </details>
+
+
+    <!-- My Journal -->
+    <details>
+        <summary>📘 My Journal</summary>
+        <div class="section">
+            <p>✍️ Write your journal:</p>
+            <textarea placeholder="Write about your day..."></textarea>
+            <button>Submit (no save without JS)</button>
+        </div>
+    </details>
+
+
+    <!-- Journal History -->
+    <details>
+        <summary>📚 Journal History</summary>
+        <div class="section">
+            <p>📝 Add your old journals here:</p>
+            <textarea placeholder="Your past journal entries..."></textarea>
+        </div>
+    </details>
+
+
+    <!-- AI Chat -->
+    <details>
+        <summary>🤖 AI Chat</summary>
+        <div class="section">
+            <p>💬 Type your message:</p>
+            <textarea placeholder="Say anything..."></textarea>
+            <button>Send (no reply without JS)</button>
+        </div>
+    </details>
+
+
+    <!-- Chat History -->
+    <details>
+        <summary>💬 Chat History</summary>
+        <div class="section">
+            <p>📜 Write your old chats manually:</p>
+            <textarea placeholder="Your chat history..."></textarea>
+        </div>
+    </details>
+
+
+    <!-- Meditation & Yoga -->
+    <details>
+        <summary>🧘‍♂️ Meditation & Yoga</summary>
+        <div class="section">
+            <p>💙 Simple calming activities:</p>
+            <ul>
+                <li>🧘‍♀️ Deep breathing — 5 minutes</li>
+                <li>🌤 Light stretching</li>
+                <li>🎧 Relaxing music</li>
+                <li>🚶‍♂️ Slow walk</li>
+                <li>💭 Sit quietly and relax</li>
+            </ul>
+        </div>
+    </details>
+
+</div>
+
+</body>
+</html>
