@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Healify Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>🏠 Healify Dashboard</header>
+
+<div class="container">
+
+    <!-- Mood Tracker -->
+    <details>
+        <summary>😊 Mood Tracker</summary>
+        <div class="section">
+            <p>💙 Choose your mood:</p>
+            <select id="moodSelect">
+                <option>Happy 😊</option>
+                <option>Sad 😔</option>
+                <option>Angry 😡</option>
+                <option>Stressed 😥</option>
+                <option>Confused 😕</option>
+            </select>
+            <button onclick="saveMood()">Save Mood</button>
+            <p id="moodMsg" style="margin-top:10px;"></p>
+        </div>
+    </details>
+
+    <!-- My Journal -->
+    <details>
+        <summary>📘 My Journal</summary>
+        <div class="section">
+            <textarea id="journalText" placeholder="Write about your day..."></textarea>
+            <button onclick="saveJournal()">Submit</button>
+            <p id="journalMsg"></p>
+        </div>
+    </details>
+
+    <!-- Journal History -->
+    <details>
+        <summary>📚 Journal History</summary>
+        <div class="section">
+            <textarea id="journalHistory" readonly placeholder="Your past journal entries..."></textarea>
+        </div>
+    </details>
+
+    <!-- AI Chat -->
+    <details>
+        <summary>🤖 AI Chat</summary>
+        <div class="section">
+            <textarea id="aiInput" placeholder="Say anything..."></textarea>
+            <button onclick="sendChat()">Send</button>
+            <p id="aiReply"></p>
+        </div>
+    </details>
+
+    <!-- Chat History -->
+    <details>
+        <summary>💬 Chat History</summary>
+        <div class="section">
+            <textarea id="chatHistory" readonly placeholder="Your chat history..."></textarea>
+        </div>
+    </details>
+
+    <!-- Meditation & Yoga -->
+    <details>
+        <summary>🧘‍♂️ Meditation & Yoga</summary>
+        <div class="section">
+            <ul>
+                <li>🧘‍♀️ Deep breathing — 5 minutes</li>
+                <li>🌤 Light stretching</li>
+                <li>🎧 Relaxing music</li>
+                <li>🚶‍♂️ Slow walk</li>
+                <li>💭 Sit quietly and relax</li>
+            </ul>
+        </div>
+    </details>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
